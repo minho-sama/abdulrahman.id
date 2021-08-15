@@ -17,7 +17,11 @@ const Container = ({ enableTransition, children }) => {
       </Flex>
       <Stack alignItems="center" mt={10} mb={5}>
         <Text textAlign="center" fontSize="sm">
-          Designed and Developed by Abdul Rahman.
+          Designed by
+          <a href="https://github.com/abdulrcs/abdulrahman.id">
+            {' '}
+            Abdul Rahman.
+          </a>
           <br />
           Built with{' '}
           <chakra.span fontWeight="semibold" color="button1">

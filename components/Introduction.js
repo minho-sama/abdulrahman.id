@@ -46,20 +46,20 @@ export default function Introduction() {
               position="relative"
               zIndex={1}
             >
-              Hey there!, I'm-
+              Hello there! I'm-
             </Text>
           </Box>
           <Heading
             color="textPrimary"
             fontSize="display"
-            lineHeight={'95%'}
+            lineHeight={'105%'}
             fontSize="display"
             color="displayColor"
             letterSpacing={{ sm: '-1.2px', md: '-1.8px' }}
             position="relative"
             zIndex={1}
           >
-            Abdul Rahman.
+            Nguyen Anh Minh.
           </Heading>
         </SlideFade>
 
@@ -80,8 +80,8 @@ export default function Introduction() {
             </Box>{' '}
             A self-taught developer{' '}
             {isLargerThan800
-              ? 'with an\ninterest in Computer Science.'
-              : 'with an interest in Computer Science.'}
+              ? 'with an\ninterest in Front-end technologies.'
+              : 'with an interest in Front-end technologies.'}
           </Heading>
         </SlideFade>
 
@@ -96,7 +96,7 @@ export default function Introduction() {
             <Stack isInline spacing={1}>
               <Box>🎓</Box>
               <Box>
-                Currently an Informatics Student at Universitas Negeri Surabaya.
+                Currently a Business Student at Budapest Corvinus University.
               </Box>
             </Stack>
           </Text>
@@ -113,6 +113,10 @@ export default function Introduction() {
                 position="static"
                 size={isLargerThan800 ? 'md' : 'sm'}
                 color="white"
+                bgColor = "#FFFFFF14"
+                _hover={{
+                  background: "whiteAlpha.300",
+                }}
                 onClick={() => handleClick('introduction_github')}
               >
                 Github
@@ -124,18 +128,26 @@ export default function Introduction() {
                 position="static"
                 size={isLargerThan800 ? 'md' : 'sm'}
                 color="white"
+                bgColor = "#FFFFFF14"
+                _hover={{
+                  background: "whiteAlpha.300",
+                }}
                 onClick={() => handleClick('introduction_linkedin')}
               >
                 LinkedIn
               </Button>
             </Link>
-            <Link href="mailto:abdulrcs1@gmail.com" isExternal>
+            <Link href="mailto:n.a.minh1106@gmail.com" isExternal>
               <Button
                 leftIcon={<FaEnvelope fill="#3CCF91" />}
                 transition="0.3s"
                 position="static"
                 size={isLargerThan800 ? 'md' : 'sm'}
                 color="white"
+                bgColor = "#FFFFFF14"
+                _hover={{
+                  background: "whiteAlpha.300",
+                }}
                 onClick={() => handleClick('introduction_email')}
               >
                 Email

@@ -12,23 +12,23 @@ export default function Index({ projects, articles }) {
     <>
       <Container enableTransition={true}>
         <Head>
-          <title>Abdul Rahman - Software Engineer</title>
-          <meta name="title" content="Abdul Rahman - Software Engineer" />
-          <meta name="keywords" content="abdulrcs, abdulrcs website" />
+          <title>Nguyen Anh Minh - Software Engineer</title>
+          <meta name="title" content="Nguyen Anh Minh - Software Engineer" />
+          <meta name="keywords" content="nguyenminh, nguyenminh website" />
           <meta
             name="description"
-            content="Software Engineer based in Indonesia, an undergraduate student at Universitas Negeri Surabaya."
+            content="Software Engineer based in Hungary, an undergraduate student at Budapest Corvinus University."
           />
 
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://abdulrahman.id" />
           <meta
             property="og:title"
-            content="Abdul Rahman - Software Engineer"
+            content="Nguyen Minh - Software Engineer"
           />
           <meta
             property="og:description"
-            content="Software Engineer based in Indonesia, an undergraduate student at Universitas Negeri Surabaya."
+            content="Software Engineer based in Hungary, an undergraduate student at Budapest Corvinus University."
           />
           <meta property="og:image" content="https://i.imgur.com/AOMvmeJ.png" />
 

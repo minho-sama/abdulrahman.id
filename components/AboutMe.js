@@ -128,13 +128,15 @@ export default function AboutMe() {
                 top={0}
                 right={0}
                 w={{ base: '100px', lg: '150px' }}
-                alt=""
+                alt="Nguyen Anh Minh"
               />
               <Image
-                src="https://i.imgur.com/ypIiclh.png"
+                src="https://i.imgur.com/WdtMpfl.jpg"
                 w={{ base: '300px', lg: '350px' }}
                 h={{ base: '300px', lg: '350px' }}
-                alt="Abdul Rahman"
+                borderRadius = {'50%'}
+                alt="Nguyen Anh Minh"
+                zIndex={5}
               />
             </Box>
           </Flex>

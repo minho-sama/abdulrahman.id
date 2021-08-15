@@ -53,6 +53,10 @@ export default function ContactMe() {
                 position="static"
                 size={isLargerThan800 ? 'md' : 'sm'}
                 color="white"
+                bgColor = "#FFFFFF14"
+                _hover={{
+                  background: "whiteAlpha.300",
+                }}
               >
                 LinkedIn
               </Button>
@@ -68,6 +72,10 @@ export default function ContactMe() {
                 transition="0.3s"
                 position="static"
                 size={isLargerThan800 ? 'md' : 'sm'}
+                bgColor = "#FFFFFF14"
+                _hover={{
+                  background: "whiteAlpha.300",
+                }}
               >
                 Email
               </Button>
@@ -82,6 +90,10 @@ export default function ContactMe() {
                 position="static"
                 size={isLargerThan800 ? 'md' : 'sm'}
                 color="white"
+                bgColor = "#FFFFFF14"
+                _hover={{
+                  background: "whiteAlpha.300",
+                }}
               >
                 Resume
               </Button>

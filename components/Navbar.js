@@ -27,7 +27,9 @@ export default function Navbar({ enableTransition }) {
   const Bracket = styled.span`
     color: #8f9094;
     font-weight: 600;
+    font-size:2.3rem
   `
+
   const NavbarDrawer = () => (
     <>
       <Drawer
@@ -40,24 +42,24 @@ export default function Navbar({ enableTransition }) {
         <DrawerContent backgroundColor="secondary">
           <DrawerCloseButton />
           <DrawerHeader borderBottomWidth="1px">
-            <Bracket>&#123;</Bracket>A<Bracket>&#125;</Bracket>
+            <Bracket>&#123;</Bracket>M<Bracket>&#125;</Bracket>
           </DrawerHeader>
 
           <DrawerBody>
             <Stack spacing="24px">
               <NextLink href="/" passHref>
-                <Button as="a" variant="ghost" fontSize="16px">
+                <Button as="a" variant="ghost" fontSize="16px" _hover={{ backgroundColor: 'whiteAlpha.300' }}>
                   Home
                 </Button>
               </NextLink>
               <NextLink href="/projects" passHref>
-                <Button as="a" variant="ghost" fontSize="16px">
+                <Button as="a" variant="ghost" fontSize="16px" _hover={{ backgroundColor: 'whiteAlpha.300' }}>
                   Projects
                 </Button>
               </NextLink>
               <NextLink href="/blog" passHref>
-                <Button as="a" variant="ghost" fontSize="16px">
-                  Blog
+                <Button as="a" variant="ghost" fontSize="16px" _hover={{ backgroundColor: 'whiteAlpha.300' }}>
+                  Blog 
                 </Button>
               </NextLink>
             </Stack>
@@ -98,29 +100,29 @@ export default function Navbar({ enableTransition }) {
               fontWeight="bold"
               fontSize="32px"
             >
-              <Bracket>&#123;</Bracket>A<Bracket>&#125;</Bracket>
+              <Bracket>&#123;</Bracket>M<Bracket>&#125;</Bracket>
             </Text>
           </NextLink>
           {isLargerThan768 ? (
             <Box color="textSecondary">
               <NextLink href="/" passHref>
-                <Button as="a" variant="ghost" p="4" ml="3vw" fontSize="16px">
+                <Button as="a" variant="ghost" p="4" ml="3vw" fontSize="16px" color='white' _hover={{ backgroundColor: 'whiteAlpha.300' }} >
                   Home
                 </Button>
               </NextLink>
               <NextLink href="/projects" passHref>
-                <Button as="a" variant="ghost" p="4" ml="3vw" fontSize="16px">
+                <Button as="a" variant="ghost" p="4" ml="3vw" fontSize="16px" color='white' _hover={{ backgroundColor: 'whiteAlpha.300' }}>
                   Projects
                 </Button>
               </NextLink>
               <NextLink href="/blog" passHref>
-                <Button as="a" variant="ghost" p="4" ml="3vw" fontSize="16px">
+                <Button as="a" variant="ghost" p="4" ml="3vw" fontSize="16px" color='white' _hover={{ backgroundColor: 'whiteAlpha.300' }}>
                   Blog
                 </Button>
               </NextLink>{' '}
             </Box>
           ) : (
-            <Icon as={AiOutlineMenu} w={7} h={7} onClick={onOpen} />
+            <Icon as={AiOutlineMenu} w={7} h={7} onClick={onOpen} style = {{'cursor':'pointer'}} />
           )}
         </Flex>
       </Slide>

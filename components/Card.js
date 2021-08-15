@@ -12,7 +12,6 @@ import {
 import {
   FaReact,
   FaPython,
-  FaPepperHot,
   FaJs,
   FaSass,
   FaCode,
@@ -22,6 +21,9 @@ import {
   FaBootstrap,
   FaDatabase,
 } from 'react-icons/fa'
+import {DiMongodb} from 'react-icons/di'
+import {IoLogoNodejs} from 'react-icons/io'
+import {SiTailwindcss} from 'react-icons/si'
 import useMediaQuery from '../hook/useMediaQuery'
 import ReactGA from 'react-ga'
 
@@ -34,24 +36,29 @@ export default function Cards({
   githubLink,
   deployLink,
   tag,
-}) {
+}) { 
   const getTag = (tag) => {
     let values = []
     if (tag == 'React') {
-      values[0] = 'blue'
+      values[0] = 'blue.200'
       values[1] = FaReact
+      values[2] = 'rgba(144, 205, 244, 0.16)'
     } else if (tag == 'Python') {
-      values[0] = 'orange'
+      values[0] = 'orange.200'
       values[1] = FaPython
+      values[2] = 'rgba(251, 211, 141, 0.16)'
     } else if (tag == 'Javascript') {
-      values[0] = 'yellow'
+      values[0] = 'yellow.200'
       values[1] = FaJs
+      values[2] = 'rgba(250, 240, 137, 0.16)'
     } else if (tag == 'Sass') {
-      values[0] = 'pink'
+      values[0] = 'pink.200'
       values[1] = FaSass
-    } else if (tag == 'Flask') {
-      values[0] = 'green'
-      values[1] = FaPepperHot
+      values[2] = 'rgba(251, 182, 206, 0.16)'
+    } else if (tag == 'MongoDB') {
+      values[0] = 'green.200'
+      values[1] = DiMongodb
+      values[2] = 'rgba(154, 230, 180, 0.16)'
     } else if (tag == 'Laravel') {
       values[0] = 'red'
       values[1] = FaLaravel
@@ -61,9 +68,18 @@ export default function Cards({
     } else if (tag == 'SQL') {
       values[0] = 'blue'
       values[1] = FaDatabase
+    } else if(tag == 'nodejs'){
+      values[0] = 'green.400'
+      values[1] = IoLogoNodejs
+      values[2] = 'rgba(144, 205, 244, 0.16)'
+    } else if(tag == 'TailwindCSS'){
+      values[0] = 'blue.100'
+      values[1] = SiTailwindcss
+      values[2] = 'rgba(144, 205, 244, 0.16)'
     } else {
-      values[0] = 'gray'
+      values[0] = 'gray.200'
       values[1] = FaCode
+      values[2] = 'rgba(226, 232, 240, 0.16)'
     }
     return values
   }
@@ -73,13 +89,15 @@ export default function Cards({
   const Tags = tag.map((item) => (
     <Tag
       key={item}
-      colorScheme={getTag(item)[0]}
+      color={getTag(item)[0]}
+      bgColor = {getTag(item)[2]}
       size={isLargerThan800 ? 'md' : 'sm'}
     >
       <TagLeftIcon as={getTag(item)[1]}></TagLeftIcon>
       <TagLabel>{item}</TagLabel>
     </Tag>
   ))
+
   const handleClick = (event) => {
     ReactGA.event({
       category: 'click',
