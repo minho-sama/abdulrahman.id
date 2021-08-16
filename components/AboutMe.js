@@ -70,47 +70,47 @@ export default function AboutMe() {
               fontSize={{ base: '14px', md: '16px' }}
               whiteSpace="pre-line"
             >
-              Hey! I'm Abdul Rahman, I've been close to a computer since an
-              early age, and been passionate about it ever since. <br />
-              <br /> I really liked to build stuff using{' '}
+              Hey! I'm Nguyen Anh Minh, currently an undergraduate looking to
+              improve my knowledge in web development. <br />
+              I attend at
               <MoreInfo
-                text="no-code tools"
-                content="I used to make games without code using RPG Maker VX, and build a simple website with blogspot back in primary school."
-              />
-              back in 2010, and from that, I explored how to code myself,
-              fast-forward to today, I do programming in various languages and
-              technologies, and had the privilege to worked as a{' '}
-              <MoreInfo
-                text="Software
-              Engineer in a B2B Company"
+                text="Corvinus University of Budapest"
                 content={
                   <Image
-                    w={306}
-                    h={102}
-                    src="https://i.imgur.com/2vdHCro.png"
-                    alt="linkedin"
+                    w={525}
+                    h={85}
+                    src="https://i.imgur.com/2PyRnub.png"
+                    alt="BCE"
                   />
                 }
               />
-              , I'm interested in building something awesome with code and
-              automate tasks with code, currently focused in
+              and will major in business management. My programming journey
+              kickstarted when I found this cool site called
               <MoreInfo
-                text="Web Development,"
-                content="Building web-apps using Javascript Frameworks (React.js and Next.js)"
+                text="The Odin Project"
+                content={
+                  <Image
+                    w={500}
+                    h={70}
+                    src="https://i.imgur.com/l5TAe5M.png"
+                    alt="TOP"
+                  />
+                }
               />
+              where I picked up the Full-Stack Javascript path. <br />
+              The main area of my expertise is{' '}
               <MoreInfo
-                text="Open Source"
-                content="I really like the idea of contributing new features to open source projects that can be useful to other people."
+                text="Front End Development."
+                content={
+                  "because it's always evolving and changing, allowing me to satisfy my creativity, and I enjoy interacting with clients"
+                }
               />
-              and
-              <MoreInfo
-                text="Competitive Programming"
-                content="Competitive Programming helped me to sharpen my Algorithms and Problem Solving skills."
-              />
+              I build small and medium web apps using ReactJS on the
+              client-side and ExpressJS for the backend.
               <br />
               <br />
-              When I'm not coding I play games with my friends, watch some show
-              on Netflix, or if the weather's good, play basketball! 🏀
+              Outside of coding, I enjoy video games, playing football and
+              snowboarding 🎮⚽🏂.
             </Text>
           </Stack>
         </SlideUpWhenVisible>
@@ -134,7 +134,7 @@ export default function AboutMe() {
                 src="https://i.imgur.com/WdtMpfl.jpg"
                 w={{ base: '300px', lg: '350px' }}
                 h={{ base: '300px', lg: '350px' }}
-                borderRadius = {'50%'}
+                borderRadius={'50%'}
                 alt="Nguyen Anh Minh"
                 zIndex={5}
               />

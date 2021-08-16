@@ -96,7 +96,7 @@ export default function Introduction() {
             <Stack isInline spacing={1}>
               <Box>🎓</Box>
               <Box>
-                Currently a Business Student at Budapest Corvinus University.
+                Currently a Business Student at Corvinus University of Budapest.
               </Box>
             </Stack>
           </Text>
@@ -107,7 +107,7 @@ export default function Introduction() {
           transition={{ enter: { duration: 0.4, delay: 1.0 } }}
         >
           <Stack isInline spacing={4}>
-            <Link href="https://github.com/abdulrcs" isExternal>
+            <Link href="https://github.com/minho-sama" isExternal>
               <Button
                 leftIcon={<FaGithub color="#3CCF91" />}
                 position="static"
@@ -122,7 +122,7 @@ export default function Introduction() {
                 Github
               </Button>
             </Link>
-            <Link href="https://linkedin.com/in/abdulrcs" isExternal>
+            <Link href="https://www.linkedin.com/in/nguyen-anh-minh-hu/" isExternal>
               <Button
                 leftIcon={<FaLinkedin color="#3CCF91" />}
                 position="static"
