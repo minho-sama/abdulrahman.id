@@ -44,7 +44,7 @@ export default function ContactMe() {
         <SlideUpWhenVisible>
           <Stack isInline spacing={4}>
             <Link
-              href="https://linkedin.com/in/abdulrcs"
+              href="https://www.linkedin.com/in/nguyen-anh-minh-hu/"
               isExternal
               onClick={() => handleClick('contact_linkedin')}
             >
@@ -62,7 +62,7 @@ export default function ContactMe() {
               </Button>
             </Link>
             <Link
-              href="mailto:abdulrcs1@gmail.com"
+              href="mailto:n.a.minh1106@gmail.com"
               isExternal
               onClick={() => handleClick('contact_email')}
             >
@@ -81,7 +81,7 @@ export default function ContactMe() {
               </Button>
             </Link>
             <Link
-              href="https://drive.google.com/file/d/1IvhcdThnfMAcPEHy6Yvq4o8vSaIi_ArV/view?usp=sharing"
+              href="https://drive.google.com/file/d/1qOCNeJS7sUoiNWO22xYXMN2Bf8-dWd8D/view?usp=sharing"
               isExternal
               onClick={() => handleClick('contact_resume')}
             >

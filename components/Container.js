@@ -33,7 +33,7 @@ const Container = ({ enableTransition, children }) => {
           </chakra.span>
           . Hosted on{' '}
           <chakra.span fontWeight="semibold" color="button1">
-            Vercel
+            Netlify
           </chakra.span>
           .
         </Text>

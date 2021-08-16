@@ -21,9 +21,10 @@ import {
   FaBootstrap,
   FaDatabase,
 } from 'react-icons/fa'
-import {DiMongodb} from 'react-icons/di'
+import {DiMongodb, DiCss3} from 'react-icons/di'
 import {IoLogoNodejs} from 'react-icons/io'
 import {SiTailwindcss} from 'react-icons/si'
+import {RiBracketsFill} from 'react-icons/ri'
 import useMediaQuery from '../hook/useMediaQuery'
 import ReactGA from 'react-ga'
 
@@ -68,7 +69,7 @@ export default function Cards({
     } else if (tag == 'SQL') {
       values[0] = 'blue'
       values[1] = FaDatabase
-    } else if(tag == 'nodejs'){
+    } else if(tag == 'NodeJS'){
       values[0] = 'green.400'
       values[1] = IoLogoNodejs
       values[2] = 'rgba(144, 205, 244, 0.16)'
@@ -76,11 +77,20 @@ export default function Cards({
       values[0] = 'blue.100'
       values[1] = SiTailwindcss
       values[2] = 'rgba(144, 205, 244, 0.16)'
+    } else if(tag == "EJS"){
+      values[0] = 'pink.500'
+      values[1] = RiBracketsFill
+      values[2] = "rgba(153,49,179,0.16)"
+    } else if(tag == "CSS"){
+      values[0] = 'blue.400'
+      values[1] = DiCss3
+      values[2] = "rgba(144, 205, 244, 0.16)"
     } else {
       values[0] = 'gray.200'
       values[1] = FaCode
       values[2] = 'rgba(226, 232, 240, 0.16)'
     }
+    //EJS add
     return values
   }
 
